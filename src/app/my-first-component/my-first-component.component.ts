@@ -20,4 +20,5 @@ export class MyFirstComponentComponent implements OnInit {
     this.color=value;
     }
    
+    
 }
