@@ -1,1 +1,5 @@
+<div #f class="fadher__container" [style.background-color]="color"  >
+
 <p>fadher-component works!</p>
+</div>
+<app-child-component (sendColorFromSon)="update($event)"></app-child-component>

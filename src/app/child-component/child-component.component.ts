@@ -1,15 +1,22 @@
-import {Component,OnInit,Input} from '@angular/core';
+import {Component,EventEmitter, Output} from '@angular/core';
+
 
 @Component({
   selector: 'app-child-component',
   templateUrl: './child-component.component.html',
   styleUrls: ['./child-component.component.css']
 })
-export class ChildComponentComponent implements OnInit {
-  @Input()
-  dataparent!: string;
-  constructor() { }
-  ngOnInit(): void {
-  }
+export class ChildComponentComponent {
+ 
   
+    myFavoriteColor="orange"
+    @Output() sendColorFromSon = new EventEmitter();     
+    constructor() { }
+    ngOnInit() {
+    }
+    sendColorToFadher(){
+      this.sendColorFromSon.emit(this.myFavoriteColor);
+    }
+    
+
 }
