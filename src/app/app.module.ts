@@ -7,12 +7,19 @@ import { MyFirstComponentComponent } from './my-first-component/my-first-compone
 
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { FadherComponentComponent } from './fadher-component/fadher-component.component';
+import { ChildComponentComponent } from './child-component/child-component.component';
 @NgModule({
   declarations: [
     AppComponent,
     MyFirstComponentComponent,
     
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    
+    
+    FadherComponentComponent,
+    
+    ChildComponentComponent
   ],
   imports: [
     BrowserModule,
